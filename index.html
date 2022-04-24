@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Randai</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>    
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#services">SERVICES</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div id="particles-js"></div>
+
+    <div class="content">
+        <img class="tilt" src="images/home-pic.png" alt="">
+        <h3> Abhinav <span>Randai</span> </h3>
+        <p> I am a <span class="typing-text"> Programmer / Developer </span> </p>
+        <a href="#about" class="btn">about me</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> about <span>me</span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="images/about-pic.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3> My name is <span> Abhinav Randai </span> </h3>
+            <p class="info">I am a highly competent IT professional with a proven track record in designing websites, networking and managing databases. I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients. I am eager to be challenged in order to grow and further improve my IT skills. My greatest passion is in life is using my technical know-how to benefit other people and organisations.</p>
+            <div class="box-container">
+                <div class="box">
+                    <p> <span> Age: </span> 19 </p>
+                    <p> <span> Gender: </span> Male </p>
+                    <p> <span> Education: </span> 2nd Year pursuing in B.Tech </p>
+                </div>
+                <div class="box">
+                    <p> <span> Language : </span> Hindi / English </p>
+                    <p> <span> Phone : </span> +91 7058317661 </p>
+                    <p> <span> E-mail : </span> abhinavrandai403@gmail.com </p>
+                    <p> <span> Address : </span> Nagpur, India - 441110 </p>
+                </div>
+            </div>
+            <a href="#" class="btn">download CV</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> <span> my </span> services </h1>
+
+    <div class="box-container">
+
+        <div class="box tilt">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>“I don't just build websites, I build websites that SELLS”</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Graphic Designer</h3>
+            <p>“Make it work, make it right, make it fast.”</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fas fa-mobile"></i>
+            <h3>Responsive Designs</h3>
+            <p>“A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.”</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fab fa-wordpress"></i>
+            <h3>Wordpress</h3>
+            <p>“The most important thing is this: To be able at any moment, to sacrifice what you are, for what you will become!”</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fas fa-code"></i>
+            <h3>Programmer</h3>
+            <p>“The most important thing is this: To be able at any moment, to sacrifice what you are, for what you will become!”</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> Contact <span> Me </span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="images/contact-img.svg" alt="">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="Text" placeholder="Name">
+                <input type="E-mail" placeholder="E-mail">
+            </div>
+
+            <input type="Text" placeholder="Subject" class="box">
+
+            <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="Submit" class="btn" value="Send message">
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- contact section ends -->
+
+<!-- footer section  -->
+
+<div class="footer"> created by <span> MR. Abhinavrandai403 </span> | all rights reserved! </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript part  -->
+
+<!-- typed.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+<!-- particles.js links  -->
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+
+<!-- vanilla-tilt.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let header = document.querySelector('header');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    header.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    header.classList.remove('active');
+};
+
+var typed = new Typed('.typing-text', {
+    strings : ['front end developer', 'web designer', 'graphic designer', 'web developer'],
+    loop : true,
+    typeSpeed : 150
+});
+
+VanillaTilt.init(document.querySelectorAll('.tilt'),{
+    max:25
+});
+
+</script>
+
+</body>
+</html>
